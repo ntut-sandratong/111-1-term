@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斑比山丘</title>
+
+    <!-- Import CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Set Favourite Icon -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <nav class="container">
+        <div class="row">
+            <div class="nav d-flex justify-content-between align-items-center fs-5 fw-bold">
+    
+                <!-- Logo on Left -->
+                <a href="./" class="nav__logo">
+                    <img class="w-100" src="images/logo.png" alt="">
+                </a>
+                <!-- Menu on Right -->
+                <div class="d-flex gap-4 flex-row-reverse flex-row align-items-center">
+    
+                    <!-- Hamburger -->
+                    <div class="d-flex d-lg-none flex-column nav__hamburger js-open-menu"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMobileMenu" 
+                        aria-controls="offcanvasMobileMenu">
+                        <span class="nav__hamburger--line"></span>
+                        <span class="nav__hamburger--line"></span>
+                        <span class="nav__hamburger--line"></span>
+                    </div>
+    
+                    <!-- Menu Items -->
+                    <div class="d-none d-md-flex flex-column flex-md-row gap-5 align-items-start align-items-md-center w-100 w-md-auto">
+    
+                        <div class="d-none d-lg-flex nav__items flex-md-row flex-column gap-5 swap_ani">
+                            <a href="./" class="active nav-index" data-replace="首頁"><span>首頁</span></a>
+                            <a href="./news" class="nav-news" data-replace="最新活動"><span>最新活動</span></a>
+                            <a href="./info" class="nav-info" data-replace="園區資訊"><span>園區資訊</span></a>
+                            <a href="./products" class="nav-products" data-replace="商品介紹"><span>商品介紹</span></a>
+                        </div>
+                        <!-- Booking CTA Button -->
+                        <a href="./booking" class="d-flex justify-content-center gap-3 w-100 w-md-auto nav-booking nav__cta">
+                            <span class="svg-icon"><img src="images/icons/little-carrot.svg" alt=""></span>線上預約
+                        </a>
+                    </div>
+    
+                    <!-- Mobile Menu -->
+                    <div id="offcanvasMobileMenu" class="offcanvas offcanvas-end d-none p-4 gap-5 nav__mobile" tabindex="-1">
+                        <div class="d-flex justify-content-end">
+                            <img src="images/icons/close.svg" alt="" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </div>
+                        <div class="nav__items d-flex flex-column gap-4">
+                            <a href="./" class="active nav-index">首頁</a>
+                            <a href="./news" class="nav-news">最新活動</a>
+                            <a href="./info" class="nav-info">園區資訊</a>
+                            <a href="./products" class="nav-products">商品介紹</a>
+                        </div>
+                        <!-- Booking CTA Button -->
+                        <a href="./booking" class="d-flex justify-content-center gap-3 w-100 w-md-auto nav-booking nav__cta">
+                            <span class="svg-icon"><img src="images/icons/little-carrot.svg" alt=""></span>線上預約
+                        </a>
+                        <!-- Social Media -->
+                        <div class="d-flex gap-5">
+                            <a class="d-inline-flex" href="https://www.facebook.com/bambiland.yilan/"
+                                target="_blank">
+                                <img src="images/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="d-inline-flex" href="https://www.instagram.com/bambiland.yilan/"
+                                target="_blank">
+                                <img src="images/icons/instagram.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <div class="banner__wrapper">
+            <div class="js-banner-carousel">
+                <div class="banner-slide">
+                    <img src="images/landing/carousel-1.jpg" alt="" class="d-none d-lg-block w-100 round-corner">
+                    <img src="images/landing/t-carousel-1.jpg" alt="" class="d-none d-md-block d-lg-none w-100 round-corner">
+                    <img src="images/landing/m-carousel-1.jpg" alt="" class="d-block d-md-none w-100 round-corner">
+                </div>
+                <div class="banner-slide">
+                    <img src="images/landing/carousel-2.jpg" alt="" class="d-none d-lg-block w-100 round-corner">
+                    <img src="images/landing/t-carousel-2.jpg" alt="" class="d-none d-md-block d-lg-none w-100 round-corner">
+                    <img src="images/landing/m-carousel-2.jpg" alt="" class="d-block d-md-none w-100 round-corner">
+                </div>
+                <div class="banner-slide">
+                    <img src="images/landing/carousel-3.jpg" alt="" class="d-none d-lg-block w-100 round-corner">
+                    <img src="images/landing/t-carousel-3.jpg" alt="" class="d-none d-md-block d-lg-none w-100 round-corner">
+                    <img src="images/landing/m-carousel-3.jpg" alt="" class="d-block d-md-none w-100 round-corner">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="intro">
+        <div class="container">
+            <div class="row js-md-common-carousel">
+                <div class="d-flex col-4">
+                    <div class="d-flex flex-column mx-2 mx-md-auto intro__card round-corner">
+                        <img class="w-100" src="images/landing/info-1.jpg" alt="">
+                        <div class="d-flex py-3 px-3 px-md-4 flex-column align-items-start gap-4 card-content">
+                            <div class="tag">
+                                <img src="images/icons/location.svg" alt="" class="svg-icon">
+                                園區基本資訊
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex flex-row gap-1 fs-5 fw-bold swap_ani">
+                                    <img src="images/icons/map.svg" alt="">
+                                    <a href="https://goo.gl/maps/zPuXTQhjS1s85kwM9" target="_blank" data-replace="宜蘭縣冬山鄉下湖路285號">
+                                        <span>宜蘭縣冬山鄉下湖路285號</span>
+                                    </a>
+                                </div>
+                                <div class="fs-6">2500坪的園區，草皮互動區350坪，來與斑比們零距離接觸！</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex col-4">
+                    <div class="d-flex flex-column mx-2 mx-md-auto intro__card round-corner">
+                        <img class="w-100" src="images/landing/info-2.jpg" alt="">
+                        <div class="d-flex py-3 px-3 px-md-4 flex-column align-items-start gap-4 card-content">
+                            <div class="tag">
+                                <img src="images/icons/take-photos.svg" alt="" class="svg-icon">
+                                拍照打卡
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="fs-5 fw-bold">愛情小屋與情鹿籤詩</div>
+                                <div class="fs-6">純白的夢幻外觀與可愛的心形窗框，怎麼拍都不會失手！</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex col-4">
+                    <div class="d-flex flex-column mx-2 mx-md-auto intro__card round-corner">
+                        <img class="w-100" src="images/landing/info-3.jpg" alt="">
+                        <div class="d-flex py-3 px-3 px-md-4 flex-column align-items-start gap-4 card-content">
+                            <div class="tag">
+                                <img src="images/icons/knowledge.svg" alt="" class="svg-icon">
+                                深入了解
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="fs-5 fw-bold">梅花鹿保育訊息</div>
+                                <div class="fs-6">讓北台灣民眾有機會接觸梅花鹿，了解牠們的生長與復育情況</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="animal">
+        <div class="d-flex flex-column gap-5">
+            <div class="animal__wrapper">
+                <div class="container">
+                    <div class="row d-flex flex-column flex-lg-row-reverse align-items-center">
+                        <div class="animal__img col-12 col-lg-7">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/landing/animal-1.png" />
+                                <source media="(min-width: 768px)" srcset="images/landing/t-animal-1.png" />
+                                <img src="images/landing/m-animal-1.png" alt="" class="d-block mx-auto col-10 col-lg-8 round-corner" />
+                            </picture>
+                        </div>
+                        <div class="col-12 col-lg-5 d-flex flex-column gap-4 gap-lg-5">
+                            <div class="animal__title green d-flex flex-column align-items-start fs-1 fw-bold">
+                                <span class="title-underline">近距離與梅花鹿互動</span>
+                                <span class="title-underline">被可愛斑比環繞 <img src="images/icons/shine.svg" alt=""></span>
+                            </div>
+                            <div class="animal__content fs-6 fs-md-5">療癒放鬆的斑比園區，可以近距離跟園內可愛的梅花鹿斑比互動，半露天設計雨天也能和小鹿親近餵食。</div>
+                            <div class="d-flex align-self-end align-self-lg-start">
+                                <a href="./info">
+                                    <button class="cus-btn green">
+                                        <span class="cus-btn-arrow">
+                                            <img src="images/icons/arrow-green.svg" alt="">
+                                        </span>
+                                        園區資訊
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="animal__wrapper">
+                <div class="container">
+                    <div class="row d-flex flex-column flex-lg-row align-items-center">
+                        <div class="animal__img col-12 col-lg-7">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/landing/animal-2.png" />
+                                <source media="(min-width: 768px)" srcset="images/landing/t-animal-2.png" />
+                                <img src="images/landing/m-animal-2.png" alt="" class="d-block mx-auto col-10 col-lg-8 round-corner" />
+                            </picture>
+                        </div>
+                        <div class="col-12 col-lg-5 d-flex flex-column gap-4 gap-lg-5">
+                            <div class="animal__title orange d-flex flex-column align-items-start fs-1 fw-bold">
+                                <span class="title-underline">毛兒刺刺</span>
+                                <span class="title-underline">呆萌可愛的水豚君 <img src="images/icons/star.svg" alt=""></span>
+                            </div>
+                            <div class="animal__content fs-6 fs-md-5">水豚的家是園區內最五彩繽紛的區域，天然的呆萌感令馬鈴薯爺爺和蕃薯爺爺吸引眾多遊客的目光。</div>
+                            <div class="d-flex align-self-end align-self-lg-start">
+                                <a href="./info">
+                                    <button class="cus-btn orange">
+                                        <span class="cus-btn-arrow">
+                                            <img src="images/icons/arrow-orange.svg" alt="">
+                                        </span>
+                                        園區資訊
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="animal__wrapper">
+                <div class="container">
+                    <div class="row d-flex flex-column flex-lg-row-reverse align-items-center">
+                        <div class="animal__img col-12 col-lg-7">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/landing/animal-3.png" />
+                                <source media="(min-width: 768px)" srcset="images/landing/t-animal-3.png" />
+                                <img src="images/landing/m-animal-3.png" alt="" class="d-block mx-auto col-10 col-lg-8 round-corner" />
+                            </picture>
+                        </div>
+                        <div class="col-12 col-lg-5 d-flex flex-column gap-4 gap-lg-5">
+                            <div class="animal__title brown d-flex flex-column align-items-start fs-1 fw-bold">
+                                <span class="title-underline">自帶超可愛舞台妝</span>
+                                <span class="title-underline">當家花旦迷你驢 <img src="images/icons/heart.svg" alt=""></span>
+                            </div>
+                            <div class="animal__content fs-6 fs-md-5">吃好睡飽到處跑，園內兩隻迷你驢個性超好相處，雖然高度不高、身型較小，但是體型都非常勻稱結實。</div>
+                            <div class="d-flex align-self-end align-self-lg-start">
+                                <a href="./info">
+                                    <button class="cus-btn brown">
+                                        <span class="cus-btn-arrow">
+                                            <img src="images/icons/arrow-brown.svg" alt="">
+                                        </span>
+                                        園區資訊
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="selected">
+        <picture>
+            <source media="(min-width: 992px)" srcset="images/landing/shop-top.png" />
+            <source media="(min-width: 768px)" srcset="images/landing/t-shop-top.png" />
+            <img src="images/landing/m-shop-top.png" alt="" class="d-block w-100" />
+        </picture>
+        <div class="selected__content pb-3 pb-md-5 text-center">
+            <div class="selected__title">
+                <img src="images/character/deer-point.png" alt="" class="deer-icon">
+                <div class="fs-2 fw-bold mb-2">斑比選物店</div>
+                <div class="fs-6">充滿可愛風格的原創設計紀念品，<br class="d-block d-md-none" />等你來把它們帶走！</div>
+            </div>
+            <div class="js-selected-carousel my-3 my-md-5">
+                <div class="selected__carousel--slide">
+                    <img src="images/products/p01.jpg" alt="" class="w-100 round-corner">
+                </div>
+                <div class="selected__carousel--slide">
+                    <img src="images/products/p02.jpg" alt="" class="w-100 round-corner">
+                </div>
+                <div class="selected__carousel--slide">
+                    <img src="images/products/p03.jpg" alt="" class="w-100 round-corner">
+                </div>
+                <div class="selected__carousel--slide">
+                    <img src="images/products/p04.jpg" alt="" class="w-100 round-corner">
+                </div>
+                <div class="selected__carousel--slide">
+                    <img src="images/products/p05.jpg" alt="" class="w-100 round-corner">
+                </div>
+                <div class="selected__carousel--slide">
+                    <img src="images/products/p06.jpg" alt="" class="w-100 round-corner">
+                </div>
+            </div>
+            <a href="./products">
+                <button class="cus-btn white">
+                    <span class="cus-btn-arrow">
+                        <img src="images/icons/arrow-white.svg" alt="">
+                    </span>
+                    商品介紹
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-column flex-lg-row px-4 px-md-3 justify-content-start justify-content-md-between align-items-start align-items-lg-end">
+                    <img src="images/logo.png" alt="" class="footer__logo">
+                    <div class="d-flex gap-1 gap-md-3 mt-4 mt-lg-0 flex-column flex-md-row justify-content-start align-items-start align-items-md-center footer__menu">
+                        <a href="./" class="footer-index">首頁</a>
+                        <div class="footer__menu--divider"></div>
+                        <a href="./news" class="footer-news">最新活動</a>
+                        <div class="footer__menu--divider"></div>
+                        <a href="./info" class="footer-info">園區資訊</a>
+                        <div class="footer__menu--divider"></div>
+                        <a href="./products" class="footer-products">商品介紹</a>
+                        <div class="footer__menu--divider"></div>
+                        <a href="./booking" class="footer-booking">線上預約</a>
+                        <div class="d-flex gap-4 mt-3 mt-md-0 ms-0 ms-md-3 footer__social">
+                            <a class="d-inline-flex" href="https://www.facebook.com/bambiland.yilan/"
+                                target="_blank">
+                                <img src="images/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="d-inline-flex" href="https://www.instagram.com/bambiland.yilan/"
+                                target="_blank">
+                                <img src="images/icons/instagram.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row mt-4 gap-2 gap-md-0 justify-content-start justify-content-lg-between align-items-start align-items-lg-center">
+                    <div class="d-flex gap-2">
+                        <img src="images/icons/location.svg" alt="" class="icon">
+                        宜蘭縣冬山鄉得安村下湖路285號
+                    </div>
+                    <div>© 2022 斑比山丘．版權所有</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="position-fixed d-flex flex-column justify-content-center align-items-center back-to-top">
+        <div class="back-to-top__arrow"></div>
+        <div class="d-none d-sm-block">回到最上</div>
+    </div>
+    
+    <div class="loading position-fixed d-flex justify-content-center align-items-center top-0 bottom-0 start-0 end-0">
+        <img src="images/loading.svg" alt="">
+    </div>
+
+    <!-- jQuery Core 3.6.1 slim minified -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Project JS -->
+    <script type="text/javascript" src="js/bambi.js"></script>
+    <script type="module" src="js/booking.js"></script>
+</body>
+
+</html>

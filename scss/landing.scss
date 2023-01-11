@@ -1,0 +1,193 @@
+.banner {
+    position: relative;
+    padding: 0 .75rem;
+    &::after {
+        content: ""; position: absolute;
+        background-color: #FFF;
+        width: 100%; height: 360px;
+        top: -136px; left: 0;
+        z-index: -1;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1800px;
+    }
+}
+.intro {
+    &__card {
+        background-color: #FFF;
+        border-radius: $corner-radius;
+        overflow: hidden;
+    }
+}
+.animal {
+    &__wrapper {
+        overflow: hidden;
+        &:nth-child(1) .animal__img::before { background-image: url('../images/landing/animal-bg-1.svg'); }
+        &:nth-child(2) .animal__img::before { background-image: url('../images/landing/animal-bg-2.svg'); }
+        &:nth-child(3) .animal__img::before { background-image: url('../images/landing/animal-bg-3.svg'); }
+    }
+    &__title {
+        &.green {
+            color: $color-green;
+            .title-underline::after { background-color: $color-green; }
+        }
+        &.orange {
+            color: $color-orange;
+            .title-underline::after { background-color: $color-orange; }
+        }
+        .title-underline {
+            position: relative;
+            padding: .5rem 0;
+            &::after {
+                content: ''; position: absolute;
+                width: 0; height: 4px;
+                bottom: 0; left: 0;
+                background-color: $color-brown;
+                transition: all 300ms ease-out;
+            }
+            &.active::after {
+                width: 100%;
+                transition: all 300ms ease-out;
+                transition-delay: 500ms;
+            }
+        }
+    }
+    &__img {
+        position: relative;
+        z-index: 0;
+        opacity: 0;
+        transform: translate(0, 50%);
+        transition: all 500ms ease-out;
+        &::before {
+            content: ''; position: absolute;
+            z-index: -1;
+            width: 90%;
+            padding-bottom: 90%;
+            top: 50%; left: 50%;
+            transform: rotate(0deg) translate(-50%, -50%);
+            transform-origin: top left;
+            background-size: contain; background-repeat: no-repeat; background-position: center;
+            animation: animal_img_bg 30s infinite;
+        }
+        &.active {
+            opacity: 1;
+            transform: translate(0, 0);
+            transition: all 500ms ease-out;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        &__img { padding: 3rem 0; }
+        &__img::before { width: 60%; padding-bottom: 60%; }
+        &__wrapper {
+            position: relative;
+            z-index: 1;
+            &::before, &::after {
+                z-index: -1;
+                content: ''; position: absolute;
+                opacity: 0;
+            }
+            &:nth-child(1) {
+                &::before {
+                    background-image: url('../images/bg/cloud.svg');
+                    width: 562px; height: 190px;
+                    top: 50%; right: -100%;
+                    transform: translate(0, -50%);
+                    transition: all 3000ms ease-out;
+                    animation: float 6s ease-in-out infinite;
+                }
+            }
+            &:nth-child(2) {
+                &::before {
+                    background-image: url('../images/bg/carrot-on-leaf.svg');
+                    width: 225px; height: 195px;
+                    top: 0; left: -100%;
+                    transition: all 1200ms ease-out;
+                }
+            }
+            &:nth-child(3) {
+                &::before {
+                    background-image: url('../images/bg/cloud.svg');
+                    width: 562px; height: 190px;
+                    top: 0; left: -100%;
+                    transition: all 1200ms ease-out;
+                    animation: float_top 6s ease-in-out infinite;
+                }
+                &::after {
+                    background-image: url('../images/bg/potato-on-cloud.svg');
+                    width: 254px; height: 140px;
+                    top: 0%; right: -100%;
+                    transition: all 1200ms ease-out;
+                }
+            }
+            &.active {
+                &:nth-child(1)::before { right: 10px; opacity: 1; transition: all 3000ms ease-out; }
+                &:nth-child(2)::before { left: 0px; opacity: 1; transition: all 1200ms ease-out; }
+                &:nth-child(3)::before { left: 5px; opacity: 1; transition: all 3000ms ease-out; }
+                &:nth-child(3)::after  { right: 0px; opacity: 1; transition: all 1200ms ease-out; }
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        &__img          { padding: 0; }
+        &__img::before  { width: 80%; padding-bottom: 80%; }
+    }
+}
+
+@keyframes animal_img_bg {
+    100% { transform: rotate(360deg) translate(-50%, -50%); } 
+}
+@keyframes float {
+	0%   { top: 50%; }
+	50%  { top: calc(50% - 30px); }
+	100% { top: 50%; }
+}
+@keyframes float_top {
+	0%   { top: 0; }
+	50%  { top: 30px; }
+	100% { top: 0; }
+}
+
+.selected {
+    &__content {
+        margin-top: -1px;
+        background-color: $color-green;
+        color: #FFF;
+    }
+    &__carousel {
+        &--slide { margin: 0 .75rem; width: 240px; }
+    }
+    @include media-breakpoint-up(md) {
+        &__carousel {
+            &--slide { width: 300px; }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        &__carousel {
+            &--slide { width: 500px; }
+        }
+    }
+}
+
+.js-banner-carousel .slick-dots {
+    bottom: 25px;
+}
+.js-banner-carousel .slick-dots .slick-active button {
+    border-radius: 9999rem;
+    border: 2px solid white;
+}
+.js-banner-carousel .slick-dots li button:before {
+    color: white !important;
+    opacity: 1;
+}
+// .js-md-common-carousel .slick-dots {
+//     bottom: -40px;
+// }
+.js-md-common-carousel .slick-dots .slick-active button {
+    border-radius: 9999rem;
+    border: 2px solid $color-yellow;
+}
+.js-md-common-carousel .slick-dots li button:before {
+    color: $color-yellow !important;
+    opacity: 1;
+}

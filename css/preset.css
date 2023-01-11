@@ -1,0 +1,46 @@
+html, body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #89623D;
+}
+
+body {
+  min-height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEF2E6), to(#FFE8D0));
+  background: linear-gradient(180deg, #FEF2E6 0%, #FFE8D0 100%);
+}
+
+* {
+  outline: none !important;
+  list-style-type: unset;
+}
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: #89623D;
+}
+
+.color-green {
+  color: #68B530;
+}
+
+.color-orange {
+  color: #ED6E00;
+}
+
+.round-corner {
+  border-radius: clamp(20px, 2.5vw, 30px);
+}
+
+.btn-close {
+  color: #89623D;
+  opacity: 1;
+}
+
+.fs-7 {
+  font-size: .875rem;
+}
