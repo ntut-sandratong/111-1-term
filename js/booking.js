@@ -85,7 +85,11 @@ function readUserData(userId) {
     get(child(ref(db), 'users/' + userId)).then((userDataInDb) => {
         if (userDataInDb.exists()) {
             for(let prop in userDataInDb.val()) {
-                $('.data-'+prop).text(userDataInDb.val()[prop]);
+                if( prop == 'tel' ) {
+                    $('.data-'+prop).text((userDataInDb.val()[prop]).slice(-3));
+                } else {
+                    $('.data-'+prop).text(userDataInDb.val()[prop]);
+                }
             }
             console.log(userDataInDb.val()['title']);
             if(userDataInDb.val()['title'] == 'mr') {
