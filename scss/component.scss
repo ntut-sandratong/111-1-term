@@ -1,0 +1,12 @@
+.tag {
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    font-size: .875rem; font-weight: bold;
+    background-color: $color-yellow;
+    border-radius: 9999rem;
+    &.white { background-color: #FFF; }
+}
