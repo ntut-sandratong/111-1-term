@@ -1,0 +1,9 @@
+.news__content {
+  grid-template-columns: repeat(6, 1fr);
+}
+.news__content .grid-1 {
+  grid-column: auto/span 6;
+}
+.news__content .grid-2 {
+  grid-column: auto/span 6;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斑比山丘</title>
+
+    <!-- Import CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Set Favourite Icon -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <nav class="container">
+        <div class="row">
+            <div class="nav d-flex justify-content-between align-items-center fs-5 fw-bold">
+    
+                <!-- Logo on Left -->
+                <a href="./" class="nav__logo">
+                    <img class="w-100" src="images/logo.png" alt="">
+                </a>
+                <!-- Menu on Right -->
+                <div class="d-flex gap-4 flex-row-reverse flex-row align-items-center">
+    
+                    <!-- Hamburger -->
+                    <div class="d-flex d-lg-none flex-column nav__hamburger js-open-menu"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMobileMenu" 
+                        aria-controls="offcanvasMobileMenu">
+                        <span class="nav__hamburger--line"></span>
+                        <span class="nav__hamburger--line"></span>
+                        <span class="nav__hamburger--line"></span>
+                    </div>
+    
+                    <!-- Menu Items -->
+                    <div class="d-none d-md-flex flex-column flex-md-row gap-5 align-items-start align-items-md-center w-100 w-md-auto">
+    
+                        <div class="d-none d-lg-flex nav__items flex-md-row flex-column gap-5 swap_ani">
+                            <a href="./" class="nav-index" data-replace="首頁"><span>首頁</span></a>
+                            <a href="./news" class="active nav-news" data-replace="最新活動"><span>最新活動</span></a>
+                            <a href="./info" class="nav-info" data-replace="園區資訊"><span>園區資訊</span></a>
+                            <a href="./products" class="nav-products" data-replace="商品介紹"><span>商品介紹</span></a>
+                        </div>
+                        <!-- Booking CTA Button -->
+                        <a href="./booking" class="d-flex justify-content-center gap-3 w-100 w-md-auto nav-booking nav__cta">
+                            <span class="svg-icon"><img src="images/icons/little-carrot.svg" alt=""></span>線上預約
+                        </a>
+                    </div>
+    
+                    <!-- Mobile Menu -->
+                    <div id="offcanvasMobileMenu" class="offcanvas offcanvas-end d-none p-4 gap-5 nav__mobile" tabindex="-1">
+                        <div class="d-flex justify-content-end">
+                            <img src="images/icons/close.svg" alt="" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </div>
+                        <div class="nav__items d-flex flex-column gap-4">
+                            <a href="./" class="nav-index">首頁</a>
+                            <a href="./news" class="active nav-news">最新活動</a>
+                            <a href="./info" class="nav-info">園區資訊</a>
+                            <a href="./products" class="nav-products">商品介紹</a>
+                        </div>
+                        <!-- Booking CTA Button -->
+                        <a href="./booking" class="d-flex justify-content-center gap-3 w-100 w-md-auto nav-booking nav__cta">
+                            <span class="svg-icon"><img src="images/icons/little-carrot.svg" alt=""></span>線上預約
+                        </a>
+                        <!-- Social Media -->
+                        <div class="d-flex gap-5">
+                            <a class="d-inline-flex" href="https://www.facebook.com/bambiland.yilan/"
+                                target="_blank">
+                                <img src="images/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="d-inline-flex" href="https://www.instagram.com/bambiland.yilan/"
+                                target="_blank">
+                                <img src="images/icons/instagram.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="page-title px-3 mb-0 mb-md-5 position-relative mx-auto">
+        <picture>
+            <source media="(min-width: 992px)" srcset="images/banner/news.jpg" />
+            <source media="(min-width: 768px)" srcset="images/banner/t-news.jpg" />
+            <img src="images/banner/m-news.jpg" alt="" class="d-block w-100 mx-auto round-corner" />
+        </picture>
+        <div class="position-absolute fs-3 fs-md-2 fs-lg-1 fw-bold color-white top-50 start-50 translate-middle">最新活動</div>
+    </div>
+    
+    <div class="news">
+        <div class="news__bg--1 gsap-scroll-fade">
+            <img src="images/bg/right-leaf.svg" alt="">
+        </div>
+        <div class="news__bg--2 gsap-scroll-fade">
+            <img src="images/bg/potato-on-leaf.svg" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="d-grid gap-4 my-5 news__content">
+                    <div class="grid-2 d-flex gap-4 flex-column align-items-start gsap-fadein">
+                        <img src="images/news/news-1.png" alt="" class="w-100">
+                        <div class="news__title color-orange">
+                            <div class="fs-6 fw-bold mb-2">2022年9月9-11日</div>
+                            <div class="fs-4 fw-bold">月亮有圓　我們也超有緣</div>
+                        </div>
+                        <div class="fs-6">【斑比山丘 x 就業中心】<br />中秋限定！連假三天不僅有吃有玩，本次更攜手就業中心，預計提供大家第一手資訊，不管是雇主或是有就職需求，都歡迎前來！</div>
+                        <div class="tag white">
+                            <img src="images/icons/location.svg" alt="" class="svg-icon">
+                            斑比山丘園內
+                        </div>
+                    </div>
+                    <div class="grid-2 d-flex gap-4 flex-column align-items-start gsap-fadein">
+                        <img src="images/news/news-2.png" alt="" class="w-100">
+                        <div class="news__title color-orange">
+                            <div class="fs-6 fw-bold mb-2">2022年7月9-10日</div>
+                            <div class="fs-4 fw-bold">來跟小鹿一起飛高高</div>
+                        </div>
+                        <div class="fs-6">【三奇美徑 冬山風箏嘉年華】<br />看風箏、玩彩繪DIY、跟斑比們作親密接觸！不但有造型風箏秀、DIY體驗、樂團表演等，還有活動聯名風箏現場免費發送！</div>
+                        <div class="tag white">
+                            <img src="images/icons/location.svg" alt="" class="svg-icon">
+                            三奇美徑
+                        </div>
+                    </div>
+                    <div class="grid-3 d-flex gap-4 flex-column align-items-start gsap-fadein">
+                        <img src="images/news/news-3.png" alt="" class="w-100">
+                        <div class="news__title color-orange">
+                            <div class="fs-6 fw-bold mb-2">即日起</div>
+                            <div class="fs-4 fw-bold">壽星專屬禮遇</div>
+                        </div>
+                        <div class="fs-6">【生鹿快樂】<br />生日前後兩天內的入園遊客（需出示證件證明），不只有小鹿、水豚爺爺、阿驢一起玩，更可獲得生日貼紙、神秘賀禮、選物折購！</div>
+                        <div class="tag white">
+                            <img src="images/icons/location.svg" alt="" class="svg-icon">
+                            斑比山丘園內
+                        </div>
+                    </div>
+                    <div class="grid-3 d-flex gap-4 flex-column align-items-start gsap-fadein">
+                        <img src="images/news/news-4.png" alt="" class="w-100">
+                        <div class="news__title color-orange">
+                            <div class="fs-6 fw-bold mb-2">2022年6月22-30日</div>
+                            <div class="fs-4 fw-bold">玩遊世界菱距離</div>
+                        </div>
+                        <div class="fs-6">【玩遊世界PASS】<br />拿300圓好樂金＆商家優惠券<br />【精美完成禮】<br />期限內完成任務再拿『露營折疊椅』</div>
+                        <div class="tag white">
+                            <img src="images/icons/location.svg" alt="" class="svg-icon">
+                            斑比山丘園內
+                        </div>
+                    </div>
+                    <div class="grid-3 d-flex gap-4 flex-column align-items-start gsap-fadein">
+                        <img src="images/news/news-5.png" alt="" class="w-100">
+                        <div class="news__title color-orange">
+                            <div class="fs-6 fw-bold mb-2">2022年6月4-7月10日</div>
+                            <div class="fs-4 fw-bold">三奇美徑熱氣球嘉年華</div>
+                        </div>
+                        <div class="fs-6">在微風輕拂的稻浪間，和小鹿一起看熱氣球<br />【熱氣球嘉年華】<br />6月4、5、11、12日【風箏嘉年華】<br />7月9、10日</div>
+                        <div class="tag white">
+                            <img src="images/icons/location.svg" alt="" class="svg-icon">
+                            冬山鄉三奇村三奇農路
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-column flex-lg-row px-4 px-md-3 justify-content-start justify-content-md-between align-items-start align-items-lg-end">
+                    <img src="images/logo.png" alt="" class="footer__logo">
+                    <div class="d-flex gap-1 gap-md-3 mt-4 mt-lg-0 flex-column flex-md-row justify-content-start align-items-start align-items-md-center footer__menu">
+                        <a href="./" class="footer-index">首頁</a>
+                        <div class="footer__menu--divider"></div>
+                        <a href="./news" class="footer-news">最新活動</a>
+                        <div class="footer__menu--divider"></div>
+                        <a href="./info" class="footer-info">園區資訊</a>
+                        <div class="footer__menu--divider"></div>
+                        <a href="./products" class="footer-products">商品介紹</a>
+                        <div class="footer__menu--divider"></div>
+                        <a href="./booking" class="footer-booking">線上預約</a>
+                        <div class="d-flex gap-4 mt-3 mt-md-0 ms-0 ms-md-3 footer__social">
+                            <a class="d-inline-flex" href="https://www.facebook.com/bambiland.yilan/"
+                                target="_blank">
+                                <img src="images/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="d-inline-flex" href="https://www.instagram.com/bambiland.yilan/"
+                                target="_blank">
+                                <img src="images/icons/instagram.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row mt-4 gap-2 gap-md-0 justify-content-start justify-content-lg-between align-items-start align-items-lg-center">
+                    <div class="d-flex gap-2">
+                        <img src="images/icons/location.svg" alt="" class="icon">
+                        宜蘭縣冬山鄉得安村下湖路285號
+                    </div>
+                    <div>© 2022 斑比山丘．版權所有</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="position-fixed d-flex flex-column justify-content-center align-items-center back-to-top">
+        <div class="back-to-top__arrow"></div>
+        <div class="d-none d-sm-block">回到最上</div>
+    </div>
+    
+    <div class="loading position-fixed d-flex justify-content-center align-items-center top-0 bottom-0 start-0 end-0">
+        <img src="images/loading.svg" alt="">
+    </div>
+
+    <!-- jQuery Core 3.6.1 slim minified -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Project JS -->
+    <script type="text/javascript" src="js/bambi.js"></script>
+    <script type="module" src="js/booking.js"></script>
+</body>
+
+</html>

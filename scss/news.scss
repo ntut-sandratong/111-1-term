@@ -1,0 +1,43 @@
+.news {
+    position: relative;
+    overflow: hidden;
+    &__bg {
+        &--1, &--2 {
+            display: none;
+        }
+    }
+    &__content {
+        grid-template-columns: repeat(6, 1fr);
+        .grid-2 { grid-column: auto / span 6; }
+        .grid-3 { grid-column: auto / span 6; }
+        @include media-breakpoint-up(md) {
+            .grid-2 { grid-column: auto / span 3; }
+            .grid-3 { grid-column: auto / span 2; }
+        }
+    }
+    @include media-breakpoint-up(md) {
+        &__bg {
+            &--1, &--2 {
+                position: absolute;
+                display: block;
+                opacity: 0;
+                transition: all 300ms ease-out;
+                &.active {
+                    opacity: 1;
+                    transition: all 300ms ease-out;
+                    transform: translate(0, 0);
+                }
+            }
+            &--1 {
+                width: 225px; height: 121px;
+                top: 0; right: 0;
+                transform: translate(100%, 0);
+            }
+            &--2 {
+                width: 225px; height: 149px;
+                bottom: 0; left: 0;
+                transform: translate(-100%, 0);
+            }
+        }
+    }
+}
