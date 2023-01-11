@@ -1,0 +1,63 @@
+.cus-btn {
+  z-index: 1;
+  padding: 0 5rem 0 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  height: 50px;
+}
+
+.cus-btn-arrow {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-animation: cus_btn_arrow infinite 800ms;
+          animation: cus_btn_arrow infinite 800ms;
+}
+
+.cus-btn::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+  border-radius: 9999rem;
+}
+
+@-webkit-keyframes cus_btn_arrow {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: 20px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+
+@keyframes cus_btn_arrow {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: 20px;
+  }
+  100% {
+    left: 10px;
+  }
+}

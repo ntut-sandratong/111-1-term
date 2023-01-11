@@ -1,0 +1,120 @@
+.booking__form {
+  grid-template-columns: repeat(6, 1fr);
+}
+.booking__form .grid-1 {
+  grid-column: auto/span 6;
+}
+.booking__form .grid-2 {
+  grid-column: auto/span 3;
+}
+
+label {
+  margin-top: 0.5rem;
+  padding: 15px 30px;
+  background-color: #FFF;
+  border-radius: 20px;
+  border: 2px solid var(--color-text);
+}
+
+label.error {
+  background-color: var(--color-error);
+  transition: all 300ms linear;
+}
+
+label.error > select, label.error > input, label.error > .checkmark {
+  background-color: var(--color-error) !important;
+  transition: all 300ms linear;
+}
+
+label.checkbox {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.input-title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+select, input {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-size: 1.3rem;
+  color: var(--color-text);
+}
+
+select::-ms-clear {
+  display: none;
+}
+
+select::-ms-reveal {
+  display: none;
+}
+
+select::-ms-expand {
+  display: none;
+  border: none;
+  background-color: #FFF;
+}
+
+select {
+  background-image: url("../images/icons/dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: auto 30%;
+  background-position: center right;
+}
+
+input::-moz-placeholder {
+  opacity: 50%;
+  color: var(--color-text);
+}
+
+input:-ms-input-placeholder {
+  opacity: 50%;
+  color: var(--color-text);
+}
+
+input::placeholder {
+  opacity: 50%;
+  color: var(--color-text);
+}
+
+input[type=checkbox] {
+  display: none;
+  font-size: 1.3rem;
+}
+
+input[type=checkbox]:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  top: 19px;
+  left: 11px;
+  border-right: 2px solid var(--color-text);
+  border-bottom: 2px solid var(--color-text);
+  transform: rotate(45deg) translate(-50%, -50%);
+}
+
+input[type=checkbox] ~ .checkmark {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+  border: 2px solid var(--color-text);
+  border-radius: 20px;
+}
+
+input[type=checkbox] ~ .text {
+  padding-left: 70px;
+  display: block;
+}

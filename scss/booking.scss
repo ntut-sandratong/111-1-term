@@ -1,0 +1,131 @@
+.booking {
+    position: relative;
+    overflow-x: hidden;
+    &__bg {
+        &--1, &--2 {
+            z-index: -1;
+            position: absolute;
+            display: none;
+        }
+    }
+    &__form {
+        grid-template-columns: repeat(6, 1fr);
+        .grid-1 { grid-column: auto / span 6; }
+        .grid-2 { grid-column: auto / span 6; }
+    }
+    &__details {
+        &--table {
+            border: 2px solid $color-brown;
+            background-color: #FFF;
+            border-radius: calc($corner-radius / 2);
+        }
+    }
+    @include media-breakpoint-up (md) {
+        &__form {
+            grid-template-columns: repeat(6, 1fr);
+            .grid-2 { grid-column: auto / span 3; }
+        }
+        &__bg {
+            &--1, &--2 {
+                width: 562px; height: 210px;
+                display: block;
+                opacity: 0;
+                transition: all 300ms ease-out;
+                &.active {
+                    opacity: 1;
+                    transition: all 300ms ease-out;
+                    transform: translate(0, 0);
+                }
+            }
+            &--1 {
+                top: 35%; right: 0;
+                transform: translate(100%, 0);
+                animation: float_cloud35 6s ease-in-out infinite;
+            }
+            &--2 {
+                bottom: 10%; left: 0;
+                transform: translate(-100%, 0);
+                animation: float_cloud90 6s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+label {
+    padding: .75rem 1rem;
+    background-color: #FFF;
+    border-radius: calc($corner-radius / 2);
+    border: 2px solid $color-brown;
+    @include media-breakpoint-up(md) {
+        padding: 1rem 1.5rem;
+    }
+}
+label.error {
+    background-color: $color-error;
+    transition: all 300ms linear;
+}
+label.error > select, label.error > input, label.error > .checkmark {
+    background-color: $color-error !important;
+    transition: all 300ms linear;
+}
+label.checkbox {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.input-title {
+    font-size: .875rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: $color-orange;
+}
+select, input {
+    width: 100%;
+    appearance: none;
+    border: none;
+    font-size: 1rem;
+    color: $color-text-primary;
+}
+select::-ms-clear { display: none; }
+select::-ms-reveal { display: none; }
+select::-ms-expand { display: none; border: none; background-color: #FFF; }
+select {
+    background-image: url("../images/icons/dropdown-arrow.svg");
+    background-repeat: no-repeat; background-size: auto 30%; background-position: center right;
+}
+input::placeholder { opacity: 50%; color: $color-text-primary; }
+input[type=checkbox] {
+    display: none;
+    font-size: 1.25rem;
+}
+input[type=checkbox]:checked ~.checkmark::after {
+    content: ""; position: absolute;
+    width: .625rem; height: 1.25rem;
+    top: 42%; left: 23%;
+    border-right: 2px solid $color-orange; border-bottom: 2px solid $color-orange;
+    transform: rotate(45deg) translate(-50%, -50%);
+    @include media-breakpoint-up (md) {
+        width: 1rem; height: 1.75rem;
+    }
+}
+input[type=checkbox] ~.checkmark {
+    position: absolute;
+    width: 2rem; height: 2rem;
+    display: block;
+    background-color: #FFF;
+    border: 2px solid $color-text-primary;
+    border-radius: calc($corner-radius / 2);
+    @include media-breakpoint-up (md) {
+        width: 3rem; height: 3rem;
+    }
+}
+input[type=checkbox] ~ .text {
+    padding-left: 3rem;
+    display: block;
+    @include media-breakpoint-up (md) {
+        padding-left: 4rem;
+    }
+}

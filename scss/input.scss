@@ -1,0 +1,58 @@
+.cus-btn {
+    z-index: 1;
+    padding: 0 1.5rem 0 4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $color-brown;
+    &-arrow {
+        position: absolute;
+        left: 10px; top: 50%;
+        width: 30px; height: 24px;
+        transform: translate(0, -50%);
+        animation: cus_btn_arrow infinite 800ms;
+        img {
+            display: block;
+        }
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+            transition: all 300ms linear;
+        }
+    }
+    &::after {
+        z-index: -1;
+        content: ""; position: absolute;
+        top: 0; left: 0;
+        width: 50px; height: 50px;
+        background-color: #FFF;
+        border-radius: 9999rem;
+        transition: all 300ms linear;
+    }
+    @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+    }
+    &.green {
+        color: $color-green;
+    }
+    &.orange {
+        color: $color-orange;
+    }
+    &.white {
+        color: #FFF;
+        &::after { background-color: $color-yellow; }
+    }
+}
+
+@keyframes cus_btn_arrow {
+    0% { left: 8px; }
+    50% { left: 12px; }
+    100% { left: 8px; }
+}
