@@ -1,0 +1,15 @@
+<svg width="64" height="139" viewBox="0 0 64 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 123C19.2115 125.545 14.9077 131.109 12 133" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41 122C41.7467 125.258 44.392 132.82 49 137" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.85 2.03429C33.6687 3.10004 32.1217 29.1222 30.6208 42L14.3421 40.8344C10.0126 35.5056 -2.62931 14.024 3.77826 10.8601C8.34149 8.60683 13.9587 23.4139 16.8143 32.1246C13.9388 22.1679 9.3675 3.39109 15.7275 3.19998C19.8622 3.07573 22.7115 22.8337 23.8259 34.7271C22.8041 22.0691 22.3998 1.03604 27.85 2.03429Z" fill="#68B530"/>
+<path d="M30.6208 42C32.1217 29.1222 33.6687 3.10004 27.85 2.03429C22.0312 0.968533 22.8855 25.0146 24.04 37.1708C23.1164 25.7917 20.1609 3.06676 15.7275 3.19998C7.06866 3.46017 18.6715 38.17 18.6715 38.17C18.6715 38.17 10.1858 7.69612 3.77826 10.8601C-2.62931 14.024 10.0126 35.5056 14.3421 40.8344L30.6208 42Z" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37.4102 45.9301C25.6958 34.1462 16.2222 40.0158 12.9498 44.4237C11.1194 44.4237 8.29064 47.7714 6.29387 57.6471C4.2971 67.5229 12.9498 87.2743 17.9417 111.21C21.9352 130.359 26.8162 134.365 28.7575 133.975C39.5734 132.301 44.0661 111.043 46.8948 99.4935C49.7236 87.9439 52.0532 60.66 37.4102 45.9301Z" fill="#ED6E00" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48 78C51.8233 73.5667 59.9759 64.56 62 64" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34 83C35.0556 79.6477 37.7333 71.9545 40 68" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 89C15.5683 87.8785 21.1639 85.7146 23 86.0313" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 100C17.8251 98.8785 23.9803 96.7146 26 97.0313" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 112L27 108" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="24" cy="60" r="2" fill="#202020"/>
+<circle cx="33" cy="59" r="2" fill="#202020"/>
+<path d="M21 67C21.1569 68.1517 22.2235 70.5539 25.2353 70.9488C28.2471 71.3437 29 69.3583 29 68.3163" stroke="#202020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
